@@ -20,13 +20,15 @@ import Autocomplete, {
 const ROLES = ['Мафія', 'Терорист', 'Мирний', 'Шлюха', 'Шериф', 'Лікар', 'Телохранітель'];
 const INITIAL_VALUE = [
   'Мафія',
+  'Мафія',
   'Терорист',
-  'Мирний',
   'Шлюха',
   'Шериф',
   'Лікар',
   'Мирний',
-  'Мирний'
+  'Мирний',
+  'Мирний',
+  'Мирний'  
 ];
 
 const shuffleArray = (arr: any[]) =>
@@ -52,7 +54,10 @@ const App = () => {
             setValue(values => [...values, details.option]);
             break;
           case 'remove-option':
-            setValue(values => [...values, details.option]);
+            setValue(values => [
+              ...values.slice(0, values.indexOf(details.option)),
+              ...values.slice(values.indexOf(details.option) + 1)
+            ]);
             break;
           case 'select-option':
             setValue(values => [...values, details.option]);
