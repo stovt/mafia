@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from 'styles/theme';
+import { GameContextProvider } from 'shared/context/GameContext';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -11,7 +12,9 @@ const renderRoot = document.getElementById('root');
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     <CssBaseline />
-    <App />
+    <GameContextProvider>
+      <App />
+    </GameContextProvider>
   </ThemeProvider>,
   renderRoot
 );

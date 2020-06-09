@@ -2,6 +2,7 @@ import { transparentize } from 'polished';
 
 const colors = {
   primary: '#0c9dbe',
+  secondary: '#ff275f',
   textPrimary: '#fff',
   textSecondary: transparentize(0.4, '#fff'),
   background: '#202125',

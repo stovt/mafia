@@ -8,6 +8,9 @@ export const themeOptions: ThemeOptions = {
     primary: {
       main: colors.primary
     },
+    secondary: {
+      main: colors.secondary
+    },
     background: {
       default: colors.background
     },
@@ -32,6 +35,12 @@ export const themeOptions: ThemeOptions = {
     MuiInputLabel: {
       asterisk: {
         display: 'none'
+      }
+    },
+    MuiStepper: {
+      root: {
+        background: colors.background,
+        padding: 0
       }
     }
   }
