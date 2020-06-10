@@ -217,7 +217,7 @@ const InputRolesForm: React.FC<FormikProps<typeof INITIAL_VALUES>> = ({ handleSu
           <SelectField
             id={ROLES.SHERIFF}
             name={ROLES.SHERIFF}
-            label='Вибір тілоохоронця'
+            label='Вибір шерифа'
             options={gameMembers
               .filter(gameMember => !gameMember.killed && gameMember.role !== ROLES.SHERIFF)
               .map(gameMember => (
