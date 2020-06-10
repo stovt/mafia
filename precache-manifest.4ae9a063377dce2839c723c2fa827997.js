@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "765ebbd9318bcdf2f8b2eefb9f763228",
+    "revision": "3237a516e083487c9ac64a758d1d22bd",
     "url": "/mafia/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mafia/static/js/2.c79a1f9c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "53e83eb9fa930f83b0ef",
-    "url": "/mafia/static/js/main.419ec3a5.chunk.js"
+    "revision": "87cba5a6d7f299b89d76",
+    "url": "/mafia/static/js/main.d64b341f.chunk.js"
   },
   {
     "revision": "aa3fe48c819c56c6631d",
