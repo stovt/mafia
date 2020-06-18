@@ -118,13 +118,15 @@ const InputRolesForm: React.FC<FormikProps<typeof INITIAL_VALUES>> = ({ handleSu
               ))}
             error={mafia.every(m => m.killed) ? 'Мафія мертва' : undefined}
             helperText={
-              mafia.filter(m => !m.killed).length === 1 && values[ROLES.BITCH] === mafia[0].id
+              mafia.filter(m => !m.killed).length === 1 &&
+              !!mafia.filter(m => m.id === values[ROLES.BITCH]).length
                 ? 'Шлюха сіла на мафію'
                 : undefined
             }
             disabled={
               mafia.every(m => m.killed) ||
-              (mafia.filter(m => !m.killed).length === 1 && values[ROLES.BITCH] === mafia[0].id)
+              (mafia.filter(m => !m.killed).length === 1 &&
+                !!mafia.filter(m => m.id === values[ROLES.BITCH]).length)
             }
           />
         </Box>
